@@ -26,7 +26,8 @@
 body {
 	font: 400 15px Lato, sans-serif;
 	line-height: 1.8;
-	color: #07575B;
+	color: #818181;
+	background-color: #07575B;
 }
 
 h2 {
