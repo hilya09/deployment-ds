@@ -11,7 +11,7 @@ from flask import Flask,render_template,request,jsonify
 from flask_ngrok import run_with_ngrok
 import pandas as pd
 import numpy as np
-from sklearn.naive_bayes import GaussianNB
+from sklearn.ensemble import RandomForestClassifier
 from joblib import load
 
 # =[Variabel Global]=============================
@@ -71,7 +71,7 @@ def apiDeteksi():
 if __name__ == '__main__':
 	
 	# Load model yang telah ditraining
-	model = load('model_iris_gnb.model')
+	model = load('model_iris_RF.model')
 
 	# Run Flask di Google Colab menggunakan ngrok
 	run_with_ngrok(app)
