@@ -2,7 +2,7 @@ $(document).ready(function(){
   
   // -[Animasi Scroll]---------------------------
   
-  $(".navbar a, footer a[href='#halamanku']").on('click', function(event) {
+  $(".navbar a, .navbar-show-more a, footer a[href='#halamanku']").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
